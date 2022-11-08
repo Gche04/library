@@ -1,0 +1,94 @@
+
+:root{
+    --col1: rgb(7, 165, 165);
+    --col2: rgb(236, 217, 192);
+    --col3: rgb(36, 33, 33);
+    --col4: rgb(248, 243, 237);
+}
+
+body, #add, input, #show, .books{
+    color: var(--col3);
+}
+
+body, #add {
+    background-color: var(--col2);
+}
+
+#submit, .opening, #show{
+    background-color: var(--col1);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info-1, .books{
+    font-size: 2rem;
+}
+
+#add{
+    font-size: 1.5rem;
+    border-style: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.opening, .content{
+    display: flex;
+}
+
+.opening{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.content{
+    justify-content: space-around;
+    padding: 64px;
+    flex-wrap: wrap;
+}
+
+.form{
+    padding: 0px 24px 24px;
+    border-right: 2px solid var(--col1);
+}
+
+input, #show, .extra{
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input, #show{
+    border: 1px solid var(--col1);
+    padding: 8px;
+}
+
+#submit, #show{
+    font-size: 1.5rem;
+}
+
+#show{
+    margin-bottom: 24px;
+}
+
+.extra{
+    margin: 10px;
+    background-color: var(--col4);
+    padding: 8px;
+}
+
+.hold-info{
+    border-bottom: 1px solid var(--col1);
+}
+
+input[type^="radio"]{
+    accent-color: var(--col1);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="opening">
+        <p class="info-1"> Create a library from book objects </p>
+            
+            <button id="add" type="button"> add book</button>
+    </div>
+
+    <div class="content">
+        <div class="form">
+            <form id="form" action="">
+                <label for="title">Book title:</label><br>
+                <input type="text" id="title" name="title" value="" required ><br><br>
+    
+                <label for="author">Book author:</label><br>
+                <input type="text" id="author" name="author" value="" required ><br><br>
+    
+                <label for="pages">Page count:</label><br>
+                <input type="number" name="pages" id="pages" value="" required ><br><br>
+    
+                <input type="radio" name="read" id="read_book" value="read_book">
+                <label for="read_book"> Read this book </label><br>
+                
+                <input type="radio" name="read" id="unread_book" value="unread_book">
+                <label for="unread_book"> Not read this book </label><br><br>
+    
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    
+        <div class="show-books">
+            <button id="show" type="button"> show books </button>
+            <div id="books">
+    
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
